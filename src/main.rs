@@ -26,5 +26,7 @@ fn main() -> Result<()> {
         anyhow::bail!("file not found: {}", args.path.display());
     }
 
-    let map = parser::parse(&args.path)?; //TODO write a function for this in elf.rs
+    let map = parser::parse(&args.path)?;
+    // TODO write a function for this in mod.rs so that it becomes
+    // the stable public API for elf::parse_elf() and linker::parse_linker().
 }
