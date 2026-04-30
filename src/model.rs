@@ -28,10 +28,10 @@ impl MemoryRegion {
 }
 #[derive(Clone, Debug)]
 pub struct MemorySection {
-    name: String,
-    address: u64,
-    size: u64,
-    kind: SectionKind
+    pub name: String,
+    pub address: u64,
+    pub size: u64,
+    pub kind: SectionKind
 }
 
 #[derive(Clone, Debug, PartialEq)]
