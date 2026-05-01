@@ -27,6 +27,4 @@ fn main() -> Result<()> {
     }
 
     let map = parser::parse(&args.path)?;
-    // TODO write a function for this in mod.rs so that it becomes
-    // the stable public API for elf::parse_elf() and linker::parse_linker().
 }

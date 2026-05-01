@@ -26,6 +26,7 @@ impl MemoryRegion {
             .sum()
     }
 }
+
 #[derive(Clone, Debug)]
 pub struct MemorySection {
     pub name: String,
